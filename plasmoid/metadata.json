@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Junior"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Aura Tasks — gamified to-do list with XP, streaks, and Pomodoro timer.",
+        "Icon": "view-task",
+        "Id": "org.kde.auratasks",
+        "License": "GPL-2.0-or-later",
+        "Name": "Aura Tasks",
+        "Version": "0.6.0",
+        "Website": "https://github.com/ghostface-bz/aura-tasks"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-Provides": []
+}

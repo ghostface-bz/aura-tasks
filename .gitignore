@@ -1,0 +1,23 @@
+# Build artifacts
+/build/
+/target/
+*.so
+*.o
+*.a
+*.rlib
+
+# Packages
+*.plasmoid
+
+# Editor configs
+.qmlls.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.kate-swp
+
+# OS
+.DS_Store
+Thumbs.db
