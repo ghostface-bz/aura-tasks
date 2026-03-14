@@ -14,7 +14,27 @@ A gamified to-do widget for KDE Plasma 6. Earn XP, level up, maintain streaks, u
 
 ## Screenshots
 
-<!-- Add screenshots here -->
+### Sumi (default dark)
+![Sumi theme](screenshots/sumi.png)
+
+### Focus Shield
+Single-task zen mode with breathing pulse, pomodoro timer, and skip controls.
+
+![Focus Shield](screenshots/focus-shield.png)
+
+## Themes
+
+Cycle through themes by clicking the colored dot in the header. All 7 themes use consistent color tokens across every UI element.
+
+| Theme | Style | Preview |
+|-------|-------|---------|
+| **Sumi** 墨 | Japanese ink (default) | ![](screenshots/sumi.png) |
+| **Kon** 紺 | Deep indigo | ![](screenshots/kon.png) |
+| **Sakura** 桜 | Cherry blossom | ![](screenshots/sakura.png) |
+| **Ishi** 石 | Stone / granite | ![](screenshots/ishi.png) |
+| **Washi** 和紙 | Paper (light mode) | ![](screenshots/washi.png) |
+| **Matsu** 松 | Pine / forest | *coming soon* |
+| **System** | Adapts to your Plasma theme | *varies* |
 
 ## Install
 
