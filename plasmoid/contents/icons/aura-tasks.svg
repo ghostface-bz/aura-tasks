@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="100%" stop-color="#b87a4a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4b87a"/>
+      <stop offset="100%" stop-color="#c8a96c"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" rx="48" ry="48" fill="url(#bg)"/>
+
+  <!-- Subtle border -->
+  <rect x="1" y="1" width="254" height="254" rx="47" ry="47" fill="none" stroke="#262626" stroke-width="1.5"/>
+
+  <!-- Background glow behind check circle -->
+  <circle cx="128" cy="108" r="44" fill="#c8956c" opacity="0.06" filter="url(#softglow)"/>
+
+  <!-- Outer breathing ring (larger, faint) -->
+  <circle cx="128" cy="108" r="58" fill="none" stroke="#c8956c" stroke-width="1" opacity="0.15"/>
+
+  <!-- Check circle ring -->
+  <circle cx="128" cy="108" r="44" fill="none" stroke="url(#accent)" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Inner fill hint -->
+  <circle cx="128" cy="108" r="44" fill="#c8956c" opacity="0.04"/>
+
+  <!-- Checkmark -->
+  <polyline points="109,108 122,121 149,96" fill="none" stroke="url(#accent)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- XP progress arc (bottom decorative) -->
+  <path d="M 72 178 A 64 64 0 0 1 184 178" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <!-- Filled portion of XP arc -->
+  <path d="M 72 178 A 64 64 0 0 1 148 170" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round" opacity="0.7" filter="url(#glow)"/>
+
+  <!-- Three small dots (streak/session indicators) -->
+  <circle cx="108" cy="158" r="2" fill="#c8956c" opacity="0.5"/>
+  <circle cx="118" cy="155" r="2" fill="#c8956c" opacity="0.35"/>
+  <circle cx="128" cy="154" r="2" fill="#c8956c" opacity="0.2"/>
+
+  <!-- "AURA" text -->
+  <text x="128" y="205" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="300" letter-spacing="6" fill="#e8e4df" opacity="0.8">AURA</text>
+
+  <!-- "TASKS" subtext -->
+  <text x="128" y="222" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="300" letter-spacing="4" fill="#6b6560" opacity="0.6">TASKS</text>
+
+  <!-- Corner accent dots (zen minimalism) -->
+  <circle cx="28" cy="28" r="2" fill="#c8956c" opacity="0.15"/>
+  <circle cx="228" cy="28" r="2" fill="#c8956c" opacity="0.15"/>
+  <circle cx="28" cy="228" r="2" fill="#c8956c" opacity="0.15"/>
+  <circle cx="228" cy="228" r="2" fill="#c8956c" opacity="0.15"/>
+</svg>

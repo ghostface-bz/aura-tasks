@@ -9,7 +9,7 @@
         ],
         "Category": "Utilities",
         "Description": "Aura Tasks — gamified to-do list with XP, streaks, and Pomodoro timer.",
-        "Icon": "view-task",
+        "Icon": "aura-tasks",
         "Id": "org.kde.auratasks",
         "License": "GPL-2.0-or-later",
         "Name": "Aura Tasks",
